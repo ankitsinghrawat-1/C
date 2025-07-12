@@ -20,8 +20,8 @@ int main()
             printf("You have passed overall but failed in one or more subjects.\n");
         }
     } else {
-        printf("You have passed all subjects.\n");
     }
+        printf("You have passed all subjects.\n");
     
     return 0;
 }
