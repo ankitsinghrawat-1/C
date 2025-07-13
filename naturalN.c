@@ -2,7 +2,7 @@
 
 int main() 
 {
-    int num;
+    int num , n = 1;
     printf("Enter a natural number: ");
     scanf("%d", &num);
     printf("The First natural numbers are:\n");
@@ -11,7 +11,8 @@ int main()
         return 1;
     }
     do{
-        printf("%d \n", --num);
-    }while(num > 1);
+        printf("%d \n", n);
+        n++;
+    }while(n <= num);
     return 0;
 }
