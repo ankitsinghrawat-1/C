@@ -1,11 +1,15 @@
 #include <stdio.h>
 
+float c2f(float C);
+
+float c2f(float C) {
+    return (C * 9.0 / 5.0) + 32.0;
+}
 int main() 
 {
-    float F, C;
-    printf("Enter temperature in Celcius: ");
+    float C;
+    printf("Enter temperature in Celsius: ");
     scanf("%f", &C);
-    F = (C * 9.0 / 5.0) + 32.0;
-    printf("Temperature in Fahrenheit: %.2f", F);
+    printf("Temperature in Fahrenheit: %f\n", c2f(C));
     return 0;
 }
