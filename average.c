@@ -3,7 +3,7 @@ float avg(int, int, int);
 
 float avg(int a, int b, int c){
     // printf("average of %d, %d and %d is \n", a, b, c);
-    return (a + b + c)/ 3;
+    return (a + b + c)/ 3.0;
 }
 int main() 
 {
