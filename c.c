@@ -3,7 +3,7 @@
 int fibbonacci(int);
 int fibbonacci(int n)
 {
-    if (n == 0 || n == 1)
+    if (n == 2 || n == 1)
     {
         return n;
     }
