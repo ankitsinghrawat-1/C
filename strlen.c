@@ -17,17 +17,16 @@ int strlen(char str[])
 
 int main()
 {
-    char str[100]; // Declare a character array to store the input string
+    char str[100];
     printf("Enter a string: ");
-    fgets(str, sizeof(str), stdin); // Take input from the user (up to 99 characters)
-
-    // Remove the trailing newline character added by fgets
+    fgets(str, sizeof(str), stdin); 
     int i = 0;
     while (str[i] != '\0')
     {
-        if (str[i] == '\n')
+        if (str[i] == '\n') //when we press the enter key, it creates a new line (\n)
+
         {
-            str[i] = '\0';
+            str[i] = '\0'; //and if the enter key is pressed, it replaces \n with \0
             break;
         }
         i++;
